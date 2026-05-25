@@ -2,13 +2,16 @@
 @model PrivacyModel
 @{
     ViewData["Title"] = "سياسة الخصوصية";
+    ViewData["I18nPage"] = "page.privacy";
 }
 
 <section class="policy-page">
     <div class="container">
         <div class="policy-hero">
-            <h1>سياسة الخصوصية — تطبيق نور</h1>
-            <p class="policy-updated">Privacy Policy — Noor App · Last Updated: April 2026 · آخر تحديث: أبريل ٢٠٢٦</p>
+            <h1 class="ar-only">سياسة الخصوصية — تطبيق نور</h1>
+            <h1 class="en-only">Privacy Policy — Noor App</h1>
+            <p class="policy-updated ar-only">آخر تحديث: أبريل ٢٠٢٦</p>
+            <p class="policy-updated en-only">Last updated: April 2026</p>
         </div>
 
         <div class="policy-content">
@@ -50,11 +53,11 @@
 
             <article class="policy-section">
                 <h2>٤. الخدمات الخارجية / Third-Party Services</h2>
-                <p>يستخدم التطبيق خدمات خارجية لبعض الوظائف (مثل الخرائط أو المدفوعات). هذه الخدمات لها سياسات خصوصية خاصة بها. نوصيك بمراجعتها.</p>
-                <p class="en">The app uses third-party services for certain features (such as maps or payments). These services have their own privacy policies. We recommend reviewing them.</p>
+                <p>يستخدم التطبيق خدمات خارجية لبعض الوظائف (مثل الخرائط). هذه الخدمات لها سياسات خصوصية خاصة بها. نوصيك بمراجعتها.</p>
+                <p class="en">The app uses third-party services for certain features (such as maps). These services have their own privacy policies. We recommend reviewing them.</p>
             </article>
 
-            <article class="policy-section">
+            <article class="policy-section is-hidden" aria-hidden="true">
                 <h2>٥. الصدقات والمدفوعات / Donations &amp; Payments</h2>
                 <p>عند استخدام ميزة التبرع:</p>
                 <ul>

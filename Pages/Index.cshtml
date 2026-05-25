@@ -1,325 +1,485 @@
 ﻿@page
+
 @model IndexModel
+
 @{
     ViewData["Title"] = "رفيقك للصلاة والذكر والقرآن";
+    ViewData["I18nPage"] = "page.index";
 }
 
+
+
 <section class="hero">
+
     <div class="container hero-grid">
+
         <div class="hero-copy">
-            <div class="eyebrow">✨ iOS · خصوصية كاملة · بدون تتبع</div>
-            <h1>صلاتك وذكرك وقرآنك<br /><em>في مكان واحد.</em></h1>
-            <p class="hero-sub">
-                نور يرافقك يومياً — مواقيت دقيقة، أذكار تفاعلية، سلاسل تحفّزك، وقرآن يسير.
-                <span class="hero-sub-en">Noor keeps prayer, remembrance, and Quran in one calm, beautiful app — with zero data collection.</span>
+
+            <div class="eyebrow" data-i18n="hero.eyebrow">✨ · خصوصية كاملة · بدون تتبع</div>
+
+            <h1 data-i18n="hero.title" data-i18n-html>صلاتك وذكرك وقرآنك<br /><em>في مكان واحد.</em></h1>
+
+            <p class="hero-sub" data-i18n="hero.sub">
+
+                نور يرافقك يومياً — مواقيت دقيقة، أذكار تفاعلية، سلاسل تحفّزك، وقرآن يسير. كل شيء محفوظ على جهازك — بدون جمع بيانات.
+
             </p>
+
             <div class="hero-actions">
+
                 <a class="app-store-btn" href="https://apps.apple.com" target="_blank" rel="noopener">
+
                     <svg class="app-store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+
                     <span>
+
                         <small>Download on the</small>
+
                         <strong>App Store</strong>
+
                     </span>
+
                 </a>
-                <a class="btn btn-outline" href="#features">استكشف المميزات</a>
+
+                <a class="btn btn-outline" href="#features" data-i18n="hero.cta">استكشف المميزات</a>
+
             </div>
+
             <div class="hero-badges">
+
                 <span class="badge-pill">🔒 Local storage only</span>
+
                 <span class="badge-pill">🕌 Prayer · Azkar · Quran</span>
+
                 <span class="badge-pill">🔥 Daily streaks</span>
+
             </div>
+
         </div>
+
+
 
         <div class="phone-stage">
-            <div class="float-tag tag-1">
-                <span>🕌</span>
-                <strong>العصر</strong>
-                02:39:54
-            </div>
-            <div class="float-tag tag-2">
-                <span>🔥</span>
-                <strong>سلسلة ١٥</strong>
-                Keep it alive
-            </div>
+
             <div class="phone">
+
                 <div class="phone-screen">
-                    <div class="mock-ui">
-                        <div class="mock-header">
-                            <div>
-                                <div class="mock-sub">يومك مبارك</div>
-                                <div class="mock-title">لحظتي</div>
-                                <div class="mock-sub">📍 طنطا، مصر</div>
-                            </div>
-                            <div class="badge-pill" style="font-size:0.55rem;padding:0.25rem 0.45rem;">❤️</div>
-                        </div>
-                        <div class="mock-card">
-                            <div class="mock-ring-row">
-                                <div class="mock-ring">73%</div>
-                                <div>
-                                    <div class="mock-sub">الصلاة القادمة</div>
-                                    <div class="mock-prayer-name">العصر</div>
-                                    <div class="mock-countdown">02:39:54</div>
-                                </div>
-                            </div>
-                            <div class="mock-prayer-row">
-                                <div><div class="mock-prayer-dot"></div>فجر</div>
-                                <div><div class="mock-prayer-dot"></div>ظهر</div>
-                                <div><div class="mock-prayer-dot active"></div>عصر</div>
-                                <div><div class="mock-prayer-dot"></div>مغرب</div>
-                                <div><div class="mock-prayer-dot"></div>عشاء</div>
-                            </div>
-                        </div>
-                        <div class="mock-grid">
-                            <div class="mock-mini green"><div class="mock-mini-num">٥</div>الصلوات</div>
-                            <div class="mock-mini"><div class="mock-mini-num">🔥</div>سلسلة الأذكار</div>
-                            <div class="mock-mini gold"><div class="mock-mini-num">٥</div>صفحات القرآن</div>
-                            <div class="mock-mini blue"><div class="mock-mini-num">🤲</div>صدقاتي</div>
-                        </div>
-                    </div>
+
+                    <img class="app-shot" data-shot="moment" src="~/images/screenshots/ar/moment.png" data-i18n-alt="shot.moment" alt="لحظتي — شاشة التطبيق" />
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
+
 
 <section id="how-it-works">
+
     <div class="container">
+
         <div class="section-head">
-            <h2>كيف يعمل نور</h2>
-            <p>ثلاث خطوات بسيطة لبناء روتين روحي ثابت — بدون تعقيد.</p>
-            <p class="en">Three simple steps to build a steady spiritual routine.</p>
+
+            <h2 data-i18n="how.title">كيف يعمل نور</h2>
+
+            <p data-i18n="how.sub">ثلاث خطوات بسيطة لبناء روتين روحي ثابت — بدون تعقيد.</p>
+
         </div>
+
         <div class="steps-grid">
+
             <article class="step-card" data-step="1">
-                <h3>حمّل وفعّل موقعك</h3>
-                <p>اسمح بالموقع مرة واحدة لحساب مواقيت الصلاة، اتجاه القبلة، وأقرب المساجد — دون تخزين أو مشاركة.</p>
-                <p class="en">Allow location once for accurate prayer times, Qibla, and nearby mosques — never stored or shared.</p>
+
+                <h3 data-i18n="how.step1.title">حمّل وفعّل موقعك</h3>
+
+                <p data-i18n="how.step1.body">اسمح بالموقع مرة واحدة لحساب مواقيت الصلاة، اتجاه القبلة، وأقرب المساجد — دون تخزين أو مشاركة.</p>
+
+                <div class="step-shot-wrap">
+
+                    <img class="app-shot" data-shot="prayers" src="~/images/screenshots/ar/prayers.png" data-i18n-alt="shot.prayers" alt="صلاتي — مواقيت الصلاة" />
+
+                </div>
+
             </article>
+
             <article class="step-card" data-step="2">
-                <h3>ابنِ يومك الروحي</h3>
-                <p>تابع الصلوات، أكمل أذكار الصباح والمساء، واقرأ وردك من القرآن — كل شيء محفوظ على جهازك.</p>
-                <p class="en">Track prayers, complete morning and evening Azkar, and read your daily Quran portion — all stored locally.</p>
+
+                <h3 data-i18n="how.step2.title">ابنِ يومك الروحي</h3>
+
+                <p data-i18n="how.step2.body">تابع الصلوات، أكمل أذكار الصباح والمساء، واقرأ وردك من القرآن — كل شيء محفوظ على جهازك.</p>
+
+                <div class="step-shot-wrap">
+
+                    <img class="app-shot" data-shot="azkar" src="~/images/screenshots/ar/azkar.png" data-i18n-alt="shot.azkar" alt="أذكاري — أذكار الصباح" />
+
+                </div>
+
             </article>
+
             <article class="step-card" data-step="3">
-                <h3>حافظ على سلسلتك</h3>
-                <p>تذكيرات لطيفة قبل منتصف الليل، عدّاد تسبيح تفاعلي، ولوحة رحلتك لتشجيعك على الاستمرار.</p>
-                <p class="en">Gentle reminders before midnight, an interactive tasbeeh counter, and your journey dashboard to keep you consistent.</p>
+
+                <h3 data-i18n="how.step3.title">حافظ على سلسلتك</h3>
+
+                <p data-i18n="how.step3.body">تذكيرات لطيفة قبل منتصف الليل، عدّاد تسبيح تفاعلي، ولوحة رحلتك لتشجيعك على الاستمرار.</p>
+
+                <div class="step-shot-wrap">
+
+                    <img class="app-shot" data-shot="journey" src="~/images/screenshots/ar/journey.png" data-i18n-alt="shot.journey" alt="رحلتي — السلاسل والتقدم" />
+
+                </div>
+
             </article>
+
         </div>
+
     </div>
+
 </section>
+
+
 
 <section id="features">
+
     <div class="container">
+
         <div class="section-head">
-            <h2>كل ما تحتاجه في تطبيق واحد</h2>
-            <p>مصمم للاستخدام اليومي — ليلاً ونهاراً — بأناقة وهدوء.</p>
-            <p class="en">Everything you need for daily worship — day and night — in one elegant app.</p>
+
+            <h2 data-i18n="features.title">كل ما تحتاجه في تطبيق واحد</h2>
+
+            <p data-i18n="features.sub">مصمم للاستخدام اليومي — ليلاً ونهاراً — بأناقة وهدوء.</p>
+
         </div>
+
+
 
         <div class="feature-row">
+
             <div class="feature-copy">
-                <h3>لحظتي — إدراك الصلاة</h3>
-                <p>عداد تنازلي دقيق للصلاة القادمة، شريط يومي للصلوات الخمس، وتنبيهات قبل انتهاء السلسلة.</p>
+
+                <h3 data-i18n="features.f1.title">لحظتي — إدراك الصلاة</h3>
+
+                <p data-i18n="features.f1.body">عداد تنازلي دقيق للصلاة القادمة، شريط يومي للصلوات الخمس، وتنبيهات قبل انتهاء السلسلة.</p>
+
                 <ul>
-                    <li>مواقيت محسوبة حسب موقعك</li>
-                    <li>عداد متبقٍ مع حلقة تقدم</li>
-                    <li>تذكير: «لا تفوّت السلسلة»</li>
+
+                    <li data-i18n="features.f1.li1">مواقيت محسوبة حسب موقعك</li>
+
+                    <li data-i18n="features.f1.li2">عداد متبقٍ مع حلقة تقدم</li>
+
+                    <li data-i18n="features.f1.li3">تذكير: «لا تفوّت السلسلة»</li>
+
                 </ul>
+
             </div>
+
             <div class="feature-visual">
-                <div class="feature-panel">
-                    <div class="mock-card red">
-                        <div class="mock-sub">إدراك الصلاة · العصر</div>
-                        <div class="mock-countdown">02:39:45</div>
-                        <div class="mock-sub">٤:٣١ م - ٧:٥٠ م · آخر فرصة</div>
-                    </div>
-                    <div class="mock-grid">
-                        <div class="mock-mini"><div class="mock-mini-num">🔥 ١</div>سلسلة الصلاة</div>
-                        <div class="mock-mini green"><div class="mock-mini-num">🔥 ٠</div>أذكار الصباح</div>
-                        <div class="mock-mini blue"><div class="mock-mini-num">🔥 ٠</div>أذكار المساء</div>
-                        <div class="mock-mini gold"><div class="mock-mini-num">🔥 ١</div>سلسلة القراءة</div>
-                    </div>
-                </div>
+
+                <img class="app-shot" data-shot="moment" src="~/images/screenshots/ar/moment.png" data-i18n-alt="shot.moment" alt="لحظتي — إدراك الصلاة" />
+
             </div>
+
         </div>
 
+
+
         <div class="feature-row reverse">
+
             <div class="feature-copy">
-                <h3>أذكاري — تسبيح تفاعلي</h3>
-                <p>أذكار الصباح والمساء وبعد الصلاة مع عدّاد تسبيح، تقدم يومي، وسلاسل تحفّزك على الإتمام.</p>
+
+                <h3 data-i18n="features.f2.title">أذكاري — تسبيح تفاعلي</h3>
+
+                <p data-i18n="features.f2.body">أذكار الصباح والمساء وبعد الصلاة مع عدّاد تسبيح، تقدم يومي، وسلاسل تحفّزك على الإتمام.</p>
+
                 <ul>
-                    <li>تبويبات: صباح · مساء · بعد الصلاة</li>
-                    <li>زر «اضغط للتسبيح» مع حلقة تقدم</li>
-                    <li>مصادر الأحاديث والأدعية</li>
+
+                    <li data-i18n="features.f2.li1">تبويبات: صباح · مساء · بعد الصلاة</li>
+
+                    <li data-i18n="features.f2.li2">زر «اضغط للتسبيح» مع حلقة تقدم</li>
+
+                    <li data-i18n="features.f2.li3">مصادر الأحاديث والأدعية</li>
+
                 </ul>
+
             </div>
+
             <div class="feature-visual">
-                <div class="feature-panel">
-                    <div class="mock-title" style="margin-bottom:0.5rem;">أذكار الصباح</div>
-                    <div class="mock-card">
-                        <div style="font-size:0.95rem;margin-bottom:0.35rem;">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ.</div>
-                        <div class="mock-sub">رواه البخاري</div>
-                        <div style="display:flex;gap:0.5rem;margin-top:0.75rem;align-items:center;">
-                            <div class="mock-ring">●</div>
-                            <span class="btn btn-primary btn-sm" style="font-size:0.7rem;padding:0.4rem 0.8rem;">اضغط للتسبيح</span>
-                        </div>
-                    </div>
-                </div>
+
+                <img class="app-shot" data-shot="azkar" src="~/images/screenshots/ar/azkar.png" data-i18n-alt="shot.azkar" alt="أذكاري — تسبيح تفاعلي" />
+
             </div>
+
         </div>
+
+
 
         <div class="feature-row">
+
             <div class="feature-copy">
-                <h3>صلاتي · القرآن · الرحلة</h3>
-                <p>جدول صلوات واضح، ورد يومي من القرآن، آية اليوم، استماع للتلاوة، ولوحة رحلتك مع الإحصائيات.</p>
+
+                <h3 data-i18n="features.f3.title">صلاتي · القرآن · الرحلة</h3>
+
+                <p data-i18n="features.f3.body">جدول صلوات واضح، ورد يومي من القرآن، آية اليوم، استماع للتلاوة، ولوحة رحلتك مع الإحصائيات.</p>
+
                 <ul>
-                    <li>زر «صلّيتُ» بعد وقت الأذان</li>
-                    <li>ورد يومي: ٤ صفحات مع تتبع</li>
-                    <li>تحديات وسلاسل متعددة</li>
+
+                    <li data-i18n="features.f3.li1">زر «صلّيتُ» بعد وقت الأذان</li>
+
+                    <li data-i18n="features.f3.li2">ورد يومي: ٤ صفحات مع تتبع</li>
+
+                    <li data-i18n="features.f3.li3">تحديات وسلاسل متعددة</li>
+
                 </ul>
+
             </div>
+
             <div class="feature-visual">
-                <div class="feature-panel">
-                    <div class="mock-grid" style="grid-template-columns:1fr;">
-                        <div class="mock-card">
-                            <div class="mock-sub">آية اليوم</div>
-                            <div style="font-size:0.85rem;line-height:1.8;">يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا</div>
-                        </div>
-                        <div class="mock-card">
-                            <div class="mock-sub">ورد اليوم · ٤ صفحات</div>
-                            <div class="mock-mini-num">٠ / ٤</div>
-                        </div>
-                    </div>
-                </div>
+
+                <img class="app-shot" data-shot="quran" src="~/images/screenshots/ar/quran.png" data-i18n-alt="shot.quran" alt="القرآن الكريم — ورد اليوم" />
+
             </div>
+
         </div>
 
+
+
         <div class="feature-row reverse">
+
             <div class="feature-copy">
-                <h3>قبلة · مساجد · تبرعات</h3>
-                <p>بوصلة القبلة، أقرب مسجد وحلقة تحفيظ، وتبرعات آمنة عبر Apple Pay و InstaPay و PayMob.</p>
+
+                <h3 data-i18n="features.f4.title">قبلة · مساجد</h3>
+
+                <p data-i18n="features.f4.body">بوصلة القبلة، أقرب مسجد، وحلقة تحفيظ قريبة — كلها حسب موقعك.</p>
+
                 <ul>
-                    <li>لا نرى ولا نخزّن بيانات الدفع</li>
-                    <li>الموقع للخدمة فقط — لا يُرسل لأي جهة</li>
-                    <li>مناسب لجميع الأعمار (4+)</li>
+
+                    <li data-i18n="features.f4.li1">بوصلة قبلة دقيقة حسب موقعك</li>
+
+                    <li data-i18n="features.f4.li2">الموقع للخدمة فقط — لا يُرسل لأي جهة</li>
+
+                    <li data-i18n="features.f4.li3">مناسب لجميع الأعمار (4+)</li>
+
                 </ul>
+
             </div>
+
             <div class="feature-visual">
-                <div class="feature-panel">
-                    <div class="mock-grid">
-                        <div class="mock-card" style="text-align:center;">
-                            <div style="font-size:1.4rem;">🧭</div>
-                            <div class="mock-sub">اتجاه القبلة</div>
-                        </div>
-                        <div class="mock-card" style="text-align:center;">
-                            <div style="font-size:1.4rem;">🕌</div>
-                            <div class="mock-sub">أقرب مسجد · 138 م</div>
-                        </div>
-                    </div>
-                </div>
+
+                <img class="app-shot" data-shot="prayer-awareness" src="~/images/screenshots/ar/prayer-awareness.png" data-i18n-alt="shot.prayer-awareness" alt="إدراك الصلاة — القبلة والمساجد" />
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
+
 
 <section id="screenshots">
+
     <div class="container">
+
         <div class="section-head">
-            <h2>لقطات من التطبيق</h2>
-            <p>واجهة داكنة هادئة — مصممة للتركيز والطمأنينة.</p>
-            <p class="en">A calm dark interface designed for focus and peace.</p>
+
+            <h2 data-i18n="screens.title">لقطات من التطبيق</h2>
+
+            <p data-i18n="screens.sub">واجهة داكنة هادئة — مصممة للتركيز والطمأنينة.</p>
+
         </div>
+
         <div class="screens-grid">
+
             <article class="screen-card">
-                <div class="screen-mock mock-ui" style="padding:1.5rem 0.65rem;">
-                    <div class="mock-title">لحظتي</div>
-                    <div class="mock-card"><div class="mock-countdown" style="font-size:1rem;">02:39:54</div></div>
-                </div>
-                <div class="screen-caption"><strong>لحظتي</strong>My Moment</div>
+
+                <img class="app-shot" data-shot="moment" src="~/images/screenshots/ar/moment.png" data-i18n-alt="shot.moment" alt="لحظتي" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c1">لحظتي</strong></div>
+
             </article>
+
             <article class="screen-card">
-                <div class="screen-mock mock-ui" style="padding:1.5rem 0.65rem;">
-                    <div class="mock-title">صلاتي</div>
-                    <div class="mock-card"><div class="mock-prayer-name" style="font-size:1rem;">العصر</div></div>
-                </div>
-                <div class="screen-caption"><strong>صلاتي</strong>My Prayers</div>
+
+                <img class="app-shot" data-shot="prayers" src="~/images/screenshots/ar/prayers.png" data-i18n-alt="shot.prayers" alt="صلاتي" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c2">صلاتي</strong></div>
+
             </article>
+
             <article class="screen-card">
-                <div class="screen-mock mock-ui" style="padding:1.5rem 0.65rem;">
-                    <div class="mock-title">أذكاري</div>
-                    <div class="mock-card">سُبْحَانَ اللَّهِ</div>
-                </div>
-                <div class="screen-caption"><strong>أذكاري</strong>My Azkar</div>
+
+                <img class="app-shot" data-shot="azkar" src="~/images/screenshots/ar/azkar.png" data-i18n-alt="shot.azkar" alt="أذكاري" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c3">أذكاري</strong></div>
+
             </article>
+
             <article class="screen-card">
-                <div class="screen-mock mock-ui" style="padding:1.5rem 0.65rem;">
-                    <div class="mock-title">رحلتي</div>
-                    <div class="mock-mini-num">٢ يوماً</div>
-                </div>
-                <div class="screen-caption"><strong>رحلتي</strong>My Journey</div>
+
+                <img class="app-shot" data-shot="journey" src="~/images/screenshots/ar/journey.png" data-i18n-alt="shot.journey" alt="رحلتي" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c4">رحلتي</strong></div>
+
             </article>
+
+            <article class="screen-card">
+
+                <img class="app-shot" data-shot="quran" src="~/images/screenshots/ar/quran.png" data-i18n-alt="shot.quran" alt="القرآن الكريم" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c5">القرآن</strong></div>
+
+            </article>
+
+            <article class="screen-card">
+
+                <img class="app-shot" data-shot="home-dashboard" src="~/images/screenshots/ar/home-dashboard.png" data-i18n-alt="shot.home-dashboard" alt="آية اليوم والاستماع" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c6">آية اليوم</strong></div>
+
+            </article>
+
+            <article class="screen-card">
+
+                <img class="app-shot" data-shot="prayer-awareness" src="~/images/screenshots/ar/prayer-awareness.png" data-i18n-alt="shot.prayer-awareness" alt="إدراك الصلاة" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c7">إدراك الصلاة</strong></div>
+
+            </article>
+
+            <article class="screen-card">
+
+                <img class="app-shot app-shot-lock" data-shot="lock-screen" src="~/images/screenshots/ar/lock-screen.png" data-i18n-alt="shot.lock-screen" alt="ودجت شاشة القفل — الصلاة القادمة" />
+
+                <div class="screen-caption"><strong data-i18n="screens.c8">شاشة القفل</strong></div>
+
+            </article>
+
         </div>
+
     </div>
+
 </section>
+
+
 
 <section id="privacy">
+
     <div class="container">
+
         <div class="section-head">
-            <h2>خصوصيتك أولاً</h2>
-            <p>نور لا يجمع ولا يخزّن ولا يرسل أي بيانات شخصية إلى خوادمنا.</p>
-            <p class="en">Noor does not collect, store, or transmit any personal data to our servers.</p>
+
+            <h2 data-i18n="privacy.title">خصوصيتك أولاً</h2>
+
+            <p data-i18n="privacy.sub">نور لا يجمع ولا يخزّن ولا يرسل أي بيانات شخصية إلى خوادمنا.</p>
+
         </div>
+
         <div class="privacy-grid">
+
             <article class="privacy-card">
+
                 <div class="icon">📱</div>
-                <h3>تخزين محلي فقط</h3>
-                <p>الأذكار، السلاسل، والإعدادات تبقى على جهازك — دائماً.</p>
+
+                <h3 data-i18n="privacy.c1.title">تخزين محلي فقط</h3>
+
+                <p data-i18n="privacy.c1.body">الأذكار، السلاسل، والإعدادات تبقى على جهازك — دائماً.</p>
+
             </article>
+
             <article class="privacy-card">
+
                 <div class="icon">📍</div>
-                <h3>موقع للخدمة فقط</h3>
-                <p>للقبلة ومواقيت الصلاة والمساجد — بدون تخزين أو مشاركة.</p>
+
+                <h3 data-i18n="privacy.c2.title">موقع للخدمة فقط</h3>
+
+                <p data-i18n="privacy.c2.body">للقبلة ومواقيت الصلاة والمساجد — بدون تخزين أو مشاركة.</p>
+
             </article>
-            <article class="privacy-card">
+
+            <article class="privacy-card is-hidden" aria-hidden="true">
+
                 <div class="icon">🔐</div>
-                <h3>مدفوعات مشفّرة</h3>
-                <p>Apple Pay · InstaPay · PayMob — لا نرى بيانات بطاقتك.</p>
+
+                <h3 data-i18n="privacy.c3.title">مدفوعات مشفّرة</h3>
+
+                <p data-i18n="privacy.c3.body">Apple Pay · InstaPay · PayMob — لا نرى بيانات بطاقتك.</p>
+
             </article>
+
         </div>
+
         <p style="text-align:center;margin-top:1.5rem;">
-            <a class="btn btn-outline" asp-page="/Privacy">اقرأ سياسة الخصوصية الكاملة</a>
+
+            <a class="btn btn-outline" asp-page="/Privacy" data-i18n="privacy.cta">اقرأ سياسة الخصوصية الكاملة</a>
+
         </p>
+
     </div>
+
 </section>
+
+
 
 <section class="cta-band">
+
     <div class="container">
+
         <div class="cta-inner">
-            <h2>ابدأ رحلتك مع نور</h2>
-            <p>مجاني للتحميل · بدون بطاقة · iOS · نورٌ على نور</p>
+
+            <h2 data-i18n="cta.title">ابدأ رحلتك مع نور</h2>
+
+            <p data-i18n="cta.sub">مجاني للتحميل · بدون بطاقة · iOS · نورٌ على نور</p>
+
             <a class="app-store-btn" href="https://apps.apple.com" target="_blank" rel="noopener">
+
                 <svg class="app-store-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+
                 <span>
+
                     <small>Download on the</small>
+
                     <strong>App Store</strong>
+
                 </span>
+
             </a>
+
         </div>
+
     </div>
+
 </section>
 
+
+
 <section id="contact">
+
     <div class="container">
+
         <div class="section-head">
-            <h2>تواصل معنا</h2>
-            <p>سؤال، ملاحظة، أو دعاء — يسعدنا سماعك.</p>
-            <p class="en">Questions, feedback, or support — we'd love to hear from you.</p>
+
+            <h2 data-i18n="contact.title">تواصل معنا</h2>
+
+            <p data-i18n="contact.sub">سؤال، ملاحظة، أو دعاء — يسعدنا سماعك.</p>
+
         </div>
+
         <div class="contact-card">
-            <p>للاستفسارات حول التطبيق أو سياسة الخصوصية:</p>
+
+            <p data-i18n="contact.body">للاستفسارات حول التطبيق أو سياسة الخصوصية:</p>
+
             <a class="contact-email" href="mailto:ahmed.magdy.ibrahim.moharam@gmail.com">ahmed.magdy.ibrahim.moharam@gmail.com</a>
+
             <p class="contact-meta">Ahmed Magdy Moharam · Tanta, Egypt 🇪🇬</p>
+
         </div>
+
     </div>
+
 </section>
+
