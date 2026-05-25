@@ -1,0 +1,14 @@
+# Deploy Noor website on Render (https://render.com)
+# Connect repo: https://github.com/ReemSamy/Noor — branch: noorversion1
+
+services:
+  - type: web
+    name: noor-website
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    branch: noorversion1
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
