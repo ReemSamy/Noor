@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="نور — رفيقك للصلاة والذكر والقرآن. تطبيق iOS للصلاة، الأذكار، القرآن، والسلاسل — بخصوصية كاملة." />
+    <title>@ViewData["Title"] — نور Noor</title>
+    <link rel="icon" type="image/svg+xml" href="~/images/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="bg-pattern" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" asp-page="/Index">
+                <img src="~/images/logo.svg" alt="" width="36" height="36" />
+                <span class="brand-text">
+                    <span class="brand-ar">نور</span>
+                    <span class="brand-en">Noor</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="site-nav" aria-label="Main">
+                <a href="/#how-it-works">كيف يعمل</a>
+                <a href="/#features">المميزات</a>
+                <a href="/#screenshots">لقطات الشاشة</a>
+                <a href="/#privacy">الخصوصية</a>
+                <a asp-page="/Privacy">سياسة الخصوصية</a>
+                <a href="/#contact">تواصل</a>
+            </nav>
+
+            <a class="btn btn-primary btn-sm header-cta" href="https://apps.apple.com" target="_blank" rel="noopener">
+                تحميل التطبيق
+            </a>
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" asp-page="/Index">
+                    <img src="~/images/logo.svg" alt="" width="32" height="32" />
+                    <span class="brand-text">
+                        <span class="brand-ar">نور</span>
+                        <span class="brand-en">Noor</span>
+                    </span>
+                </a>
+                <p class="footer-tagline">نورٌ على نور — Light upon Light</p>
+                <p class="footer-meta">Quran 24:35 · Tanta, Egypt</p>
+            </div>
+            <div class="footer-links">
+                <a href="/#how-it-works">How It Works</a>
+                <a href="/#features">Features</a>
+                <a asp-page="/Privacy">Privacy Policy</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <div class="footer-cta">
+                <a class="btn btn-primary" href="https://apps.apple.com" target="_blank" rel="noopener">Download on App Store</a>
+                <p class="footer-copy">&copy; @DateTime.UtcNow.Year Noor App. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
