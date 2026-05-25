@@ -3,6 +3,7 @@
 Marketing and privacy site for **Noor (نور)** — an iOS companion for prayer, remembrance, and the Quran.
 
 Built with **ASP.NET Core Razor Pages** (.NET 10), styled to match the app's dark navy + gold aesthetic (tailored for Noor).
+https://www.with-noor.com/
 
 ## Pages
 
