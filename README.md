@@ -23,16 +23,8 @@ Open `https://localhost:5xxx` or `http://localhost:5xxx` (URL shown in terminal)
 ## Add real app screenshots
 
 1. Export screenshots from your iPhone (PNG).
-2. Copy them to `wwwroot/images/screenshots/` with names like:
-   - `moment.png`
-   - `prayers.png`
-   - `azkar.png`
-   - `journey.png`
-3. In `Pages/Index.cshtml`, replace the `.screen-mock` blocks with:
-
-```html
-<img src="~/images/screenshots/moment.png" alt="لحظتي" />
-```
+2. Copy them to `wwwroot/images/screenshots/ar/` and `wwwroot/images/screenshots/en/`.
+3. Screenshots swap automatically when the user switches language (AR/EN).
 
 ## Customize before launch
 
@@ -48,29 +40,10 @@ dotnet publish -c Release -o ./publish
 # Deploy ./publish folder to Azure
 ```
 
-### GitHub Pages (static export alternative)
-For a static-only host, you can publish as static files or use a small container:
-
+### Docker (Railway, Render, Fly.io)
 ```bash
 docker build -t noor-website .
 docker run -p 8080:8080 noor-website
-```
-
-## Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Add Noor app marketing website"
-gh repo create noor-app-website --public --source=. --push
-```
-
-Or create the repo on GitHub first, then:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/noor-app-website.git
-git branch -M main
-git push -u origin main
 ```
 
 ## Tech stack
@@ -78,6 +51,7 @@ git push -u origin main
 - ASP.NET Core 10 Razor Pages
 - Custom CSS (no Bootstrap dependency in layout)
 - IBM Plex Sans Arabic + Playfair Display (Google Fonts)
+- AR/EN language switcher with localStorage
 
 ## License
 
